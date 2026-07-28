@@ -62,7 +62,7 @@ export function CtaSection() {
         </p>
         <div className="mt-7 flex flex-wrap justify-center gap-3">
           <Button asChild size="lg" variant="secondary" className="rounded-full px-6">
-            <Link to="/cadastro">Cadastre-se</Link>
+            <a href="https://ai.hub.xyz/r/VNE8A8D7" target="_blank" rel="noopener noreferrer">Cadastre-se</a>
           </Button>
           <Button
             asChild

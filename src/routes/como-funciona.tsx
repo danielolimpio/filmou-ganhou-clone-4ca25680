@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Camera, CheckCircle2, CreditCard, ShieldAlert, Smartphone, Wallet } from "lucide-react";
+import hiwVideo from "@/assets/videos/how-it-works.mp4.asset.json";
+import hiwPoster from "@/assets/videos/how-it-works-poster.jpg.asset.json";
 import { Breadcrumbs, breadcrumbSchema } from "@/components/site/breadcrumbs";
+import { FeaturedVideo } from "@/components/site/featured-video";
 import { EarningsCalculator } from "@/components/site/earnings-calculator";
 import { FaqSection, CtaSection } from "@/components/site/sections";
 import { Button } from "@/components/ui/button";
@@ -100,6 +103,16 @@ function ComoFunciona() {
           ))}
         </div>
       </section>
+
+      <FeaturedVideo
+        src={hiwVideo.url}
+        poster={hiwPoster.url}
+        eyebrow="Vídeo em destaque"
+        title="Veja o passo a passo em vídeo"
+        description="Do cadastro à gravação: acompanhe uma demonstração completa de como usar a faixa de cabeça, iniciar a tarefa no app Minute e enviar o vídeo para aprovação."
+      />
+
+
 
       <section id="starter-kit" className="mt-16 scroll-mt-24">
         <p className="eyebrow">Starter Kit</p>
