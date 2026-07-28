@@ -16,9 +16,9 @@ export const Route = createFileRoute("/sobre")({
         property: "og:description",
         content: "Por que pagamos por gravações reais e como isso treina robôs.",
       },
-      { property: "og:url", content: "/sobre" },
+      { property: "og:url", content: "https://hubdata.org/sobre" },
     ],
-    links: [{ rel: "canonical", href: "/sobre" }],
+    links: [{ rel: "canonical", href: "https://hubdata.org/sobre" }],
     scripts: [
       {
         type: "application/ld+json",

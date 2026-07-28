@@ -26,9 +26,9 @@ export const Route = createFileRoute("/como-funciona")({
         property: "og:description",
         content: "Starter Kit, app Minute, boas gravações, antifraude e calculadora de ganhos.",
       },
-      { property: "og:url", content: "/como-funciona" },
+      { property: "og:url", content: "https://hubdata.org/como-funciona" },
     ],
-    links: [{ rel: "canonical", href: "/como-funciona" }],
+    links: [{ rel: "canonical", href: "https://hubdata.org/como-funciona" }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(faqSchema()) },
       {

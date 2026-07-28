@@ -12,9 +12,9 @@ export const Route = createFileRoute("/termos-de-uso")({
       },
       { property: "og:title", content: "Termos de Uso — Hub" },
       { property: "og:description", content: "Regras de participação, aprovação e pagamento." },
-      { property: "og:url", content: "/termos-de-uso" },
+      { property: "og:url", content: "https://hubdata.org/termos-de-uso" },
     ],
-    links: [{ rel: "canonical", href: "/termos-de-uso" }],
+    links: [{ rel: "canonical", href: "https://hubdata.org/termos-de-uso" }],
     scripts: [
       {
         type: "application/ld+json",

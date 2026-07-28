@@ -23,9 +23,9 @@ export const Route = createFileRoute("/")({
         content:
           "Grave tarefas do mundo real pelo seu celular e receba até R$ 30/h por gravações aprovadas. Cadastro grátis e saque por PIX.",
       },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://hubdata.org/" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://hubdata.org/" }],
     scripts: [{ type: "application/ld+json", children: JSON.stringify(faqSchema()) }],
   }),
   component: Index,

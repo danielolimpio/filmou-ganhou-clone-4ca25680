@@ -18,9 +18,9 @@ export const Route = createFileRoute("/contato")({
       },
       { property: "og:title", content: "Contato — Hub" },
       { property: "og:description", content: "Tire dúvidas sobre gravações e pagamentos." },
-      { property: "og:url", content: "/contato" },
+      { property: "og:url", content: "https://hubdata.org/contato" },
     ],
-    links: [{ rel: "canonical", href: "/contato" }],
+    links: [{ rel: "canonical", href: "https://hubdata.org/contato" }],
     scripts: [
       {
         type: "application/ld+json",

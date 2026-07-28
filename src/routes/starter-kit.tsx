@@ -18,9 +18,9 @@ export const Route = createFileRoute("/starter-kit")({
         property: "og:description",
         content: "Tudo o que você precisa para começar a gravar, enviado sem custo.",
       },
-      { property: "og:url", content: "/starter-kit" },
+      { property: "og:url", content: "https://hubdata.org/starter-kit" },
     ],
-    links: [{ rel: "canonical", href: "/starter-kit" }],
+    links: [{ rel: "canonical", href: "https://hubdata.org/starter-kit" }],
     scripts: [
       {
         type: "application/ld+json",

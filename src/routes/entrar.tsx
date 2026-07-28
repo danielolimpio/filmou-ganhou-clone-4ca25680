@@ -16,10 +16,10 @@ export const Route = createFileRoute("/entrar")({
       },
       { property: "og:title", content: "Entrar — Hub" },
       { property: "og:description", content: "Acesse seu painel de ganhos e gravações." },
-      { property: "og:url", content: "/entrar" },
+      { property: "og:url", content: "https://hubdata.org/entrar" },
       { name: "robots", content: "noindex" },
     ],
-    links: [{ rel: "canonical", href: "/entrar" }],
+    links: [{ rel: "canonical", href: "https://hubdata.org/entrar" }],
     scripts: [
       {
         type: "application/ld+json",

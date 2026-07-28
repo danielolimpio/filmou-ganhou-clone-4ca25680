@@ -17,9 +17,9 @@ export const Route = createFileRoute("/cadastro")({
       },
       { property: "og:title", content: "Cadastre-se grátis — Hub" },
       { property: "og:description", content: "Cadastro em minutos, sem custo e sem experiência." },
-      { property: "og:url", content: "/cadastro" },
+      { property: "og:url", content: "https://hubdata.org/cadastro" },
     ],
-    links: [{ rel: "canonical", href: "/cadastro" }],
+    links: [{ rel: "canonical", href: "https://hubdata.org/cadastro" }],
     scripts: [
       {
         type: "application/ld+json",

@@ -18,9 +18,9 @@ export const Route = createFileRoute("/tutoriais")({
         property: "og:description",
         content: "Aprenda a gravar vídeos aprovados e ganhar mais por hora.",
       },
-      { property: "og:url", content: "/tutoriais" },
+      { property: "og:url", content: "https://hubdata.org/tutoriais" },
     ],
-    links: [{ rel: "canonical", href: "/tutoriais" }],
+    links: [{ rel: "canonical", href: "https://hubdata.org/tutoriais" }],
     scripts: [
       {
         type: "application/ld+json",

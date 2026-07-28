@@ -12,9 +12,9 @@ export const Route = createFileRoute("/politica-de-privacidade")({
       },
       { property: "og:title", content: "Política de Privacidade — Hub" },
       { property: "og:description", content: "Tratamento de dados e gravações conforme a LGPD." },
-      { property: "og:url", content: "/politica-de-privacidade" },
+      { property: "og:url", content: "https://hubdata.org/politica-de-privacidade" },
     ],
-    links: [{ rel: "canonical", href: "/politica-de-privacidade" }],
+    links: [{ rel: "canonical", href: "https://hubdata.org/politica-de-privacidade" }],
     scripts: [
       {
         type: "application/ld+json",
