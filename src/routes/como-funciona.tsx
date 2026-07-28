@@ -7,6 +7,7 @@ import { FeaturedVideo } from "@/components/site/featured-video";
 import { EarningsCalculator } from "@/components/site/earnings-calculator";
 import { FaqSection, CtaSection } from "@/components/site/sections";
 import { Button } from "@/components/ui/button";
+import { StoreBadges } from "@/components/site/store-badges";
 import { faqSchema, TASK_CATEGORIES } from "@/lib/site-data";
 
 export const Route = createFileRoute("/como-funciona")({
