@@ -4,25 +4,27 @@ import robot from "@/assets/robot.webp.asset.json";
 import { Button } from "@/components/ui/button";
 import { VideoCarousel } from "@/components/site/video-carousel";
 import { FeaturedVideo } from "@/components/site/featured-video";
+import { WatchVsRecord } from "@/components/site/watch-vs-record";
 
 import { FaqSection, CtaSection } from "@/components/site/sections";
 import { faqSchema } from "@/lib/site-data";
 
+const TITLE = "Hub Data — ganhe dinheiro gravando vídeos em casa: R$ 30/h no PIX";
+const DESCRIPTION =
+  "Renda extra em casa gravando tarefas do dia a dia com o celular: até R$ 30 por hora aprovada, recebimento via PIX e cadastro grátis. Ganhe dinheiro treinando inteligência artificial sem sair do home office.";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hub — Filmou, Ganhou: grave tarefas e ganhe R$ 30/h" },
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
       {
-        name: "description",
+        name: "keywords",
         content:
-          "Grave tarefas do mundo real pelo seu celular e receba até R$ 30/h por gravações aprovadas. Cadastro grátis e saque por PIX.",
+          "hub data, hub video, ganhar dinheiro gravando vídeos, plataforma que paga por vídeos, trabalho em casa, renda extra, home office, ganhe dinheiro na internet, ganhar dinheiro assistindo vídeos, ganhar dinheiro treinando inteligência artificial, grave em casa receba via PIX",
       },
-      { property: "og:title", content: "Hub — Filmou, Ganhou: grave tarefas e ganhe R$ 30/h" },
-      {
-        property: "og:description",
-        content:
-          "Grave tarefas do mundo real pelo seu celular e receba até R$ 30/h por gravações aprovadas. Cadastro grátis e saque por PIX.",
-      },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
       { property: "og:url", content: "https://hubdata.org/" },
     ],
     links: [{ rel: "canonical", href: "https://hubdata.org/" }],
@@ -30,6 +32,7 @@ export const Route = createFileRoute("/")({
   }),
   component: Index,
 });
+
 
 function Index() {
   return (
