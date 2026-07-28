@@ -3,6 +3,8 @@ import { ArrowRight, BarChart3, CheckCircle2, Play } from "lucide-react";
 import robot from "@/assets/robot.webp.asset.json";
 import { Button } from "@/components/ui/button";
 import { VideoCarousel } from "@/components/site/video-carousel";
+import { FeaturedVideo } from "@/components/site/featured-video";
+
 import { FaqSection, CtaSection } from "@/components/site/sections";
 import { faqSchema } from "@/lib/site-data";
 
@@ -84,8 +86,9 @@ function Index() {
         </div>
       </section>
 
-      {/* CARROSSEL DE VÍDEOS */}
-      <VideoCarousel />
+      {/* VÍDEO EM DESTAQUE */}
+      <FeaturedVideo />
+
 
       {/* DESTAQUES */}
       <section className="mx-auto grid w-full max-w-6xl gap-4 px-4 sm:px-6 md:grid-cols-2">
@@ -136,7 +139,11 @@ function Index() {
         </div>
       </section>
 
+      {/* CARROSSEL DE VÍDEOS */}
+      <VideoCarousel />
+
       <FaqSection />
+
       <CtaSection />
     </>
   );
