@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
@@ -64,7 +63,7 @@ export function EarningsCalculator() {
         <p className="eyebrow">Estimativa total</p>
         <p className="mt-2 flex items-end gap-2">
           <span className="text-5xl font-bold text-primary sm:text-6xl">
-            R$ {perMonth.toLocaleString("pt-BR")}
+            {brl(perMonth)}
           </span>
           <span className="pb-2 text-lg text-muted-foreground">/ mês</span>
         </p>
