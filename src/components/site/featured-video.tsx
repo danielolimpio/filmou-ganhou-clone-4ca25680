@@ -6,7 +6,7 @@ export function FeaturedVideo() {
   return (
     <section
       aria-label="Vídeo em destaque"
-      className="mx-auto w-full max-w-6xl px-4 pt-10 sm:px-6"
+      className="mx-auto w-full max-w-6xl px-4 pt-10 pb-12 sm:px-6"
     >
       <div className="panel-lg grid items-center gap-8 p-8 sm:p-12 md:grid-cols-2">
         <div>
