@@ -101,6 +101,16 @@ function ComoFunciona() {
         </div>
       </section>
 
+      <FeaturedVideo
+        src={hiwVideo.url}
+        poster={hiwPoster.url}
+        eyebrow="Vídeo em destaque"
+        title="Veja o passo a passo em vídeo"
+        description="Do cadastro à gravação: acompanhe uma demonstração completa de como usar a faixa de cabeça, iniciar a tarefa no app Minute e enviar o vídeo para aprovação."
+      />
+
+
+
       <section id="starter-kit" className="mt-16 scroll-mt-24">
         <p className="eyebrow">Starter Kit</p>
         <h2 className="mt-2 text-2xl font-bold sm:text-3xl">Peça seu Starter Kit</h2>
