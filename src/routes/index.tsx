@@ -91,7 +91,7 @@ function Index() {
 
 
       {/* DESTAQUES */}
-      <section className="mx-auto grid w-full max-w-6xl gap-4 px-4 sm:px-6 md:grid-cols-2">
+      <section className="mx-auto grid w-full max-w-6xl gap-6 px-4 pt-4 sm:px-6 md:grid-cols-2">
         <article className="panel flex gap-4 p-6">
           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary-soft text-primary">
             <BarChart3 className="h-4 w-4" />
