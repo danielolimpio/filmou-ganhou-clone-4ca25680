@@ -92,7 +92,7 @@ function ComoFunciona() {
         <p className="eyebrow">Visão geral</p>
         <h1 className="mt-2 text-4xl font-bold sm:text-5xl">Como funciona</h1>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          Comece a ganhar R$ 25/h em 4 passos. Você grava tarefas reais do dia a dia pelo celular e
+          Comece a ganhar R$ 30/h em 4 passos. Você grava tarefas reais do dia a dia pelo celular e
           recebe por cada hora aprovada.
         </p>
 

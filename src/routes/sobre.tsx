@@ -43,7 +43,7 @@ function Sobre() {
 
       <div className="mt-10 grid gap-4 sm:grid-cols-3">
         {[
-          { k: "R$ 25/h", v: "Pago por gravações aprovadas" },
+          { k: "R$ 30/h", v: "Pago por gravações aprovadas" },
           { k: "Até 48h", v: "Prazo de revisão dos vídeos" },
           { k: "100% grátis", v: "Cadastro e Starter Kit sem custo" },
         ].map((item) => (
