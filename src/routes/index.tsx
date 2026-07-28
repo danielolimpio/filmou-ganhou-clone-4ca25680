@@ -15,11 +15,11 @@ export const Route = createFileRoute("/")({
         content:
           "Grave tarefas do mundo real pelo seu celular e receba R$ 25/h por gravações aprovadas (até R$ 30/h em tarefas turbinadas). Cadastro grátis e saque por PIX.",
       },
-      { property: "og:title", content: "Hub — Filmou, Ganhou: ganhe R$ 25/h gravando tarefas" },
+      { property: "og:title", content: "Hub — Filmou, Ganhou: grave tarefas e ganhe R$ 25/h" },
       {
         property: "og:description",
         content:
-          "Grave tarefas reais pelo celular, tenha aprovação automática e saque por PIX quando quiser.",
+          "Grave tarefas do mundo real pelo seu celular e receba R$ 25/h por gravações aprovadas (até R$ 30/h em tarefas turbinadas). Cadastro grátis e saque por PIX.",
       },
       { property: "og:url", content: "/" },
     ],

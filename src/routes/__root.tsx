@@ -81,11 +81,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Hub — Grave tarefas e ganhe R$ 25/h" },
+      { title: "Hub — Filmou, Ganhou: grave tarefas e ganhe R$ 25/h" },
       {
         name: "description",
         content:
-          "Grave tarefas do mundo real pelo celular e ganhe até R$ 30 por hora aprovada. Cadastro grátis, Starter Kit sem custo e saque por PIX.",
+          "Grave tarefas do mundo real pelo seu celular e receba R$ 25/h por gravações aprovadas (até R$ 30/h em tarefas turbinadas). Cadastro grátis e saque por PIX.",
       },
       { name: "author", content: "Hub" },
       { property: "og:site_name", content: "Hub" },
@@ -93,6 +93,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:locale", content: "pt_BR" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#22c55e" },
+      { property: "og:title", content: "Hub — Filmou, Ganhou: grave tarefas e ganhe R$ 25/h" },
+      { name: "twitter:title", content: "Hub — Filmou, Ganhou: grave tarefas e ganhe R$ 25/h" },
+      { property: "og:description", content: "Grave tarefas do mundo real pelo seu celular e receba R$ 25/h por gravações aprovadas (até R$ 30/h em tarefas turbinadas). Cadastro grátis e saque por PIX." },
+      { name: "twitter:description", content: "Grave tarefas do mundo real pelo seu celular e receba R$ 25/h por gravações aprovadas (até R$ 30/h em tarefas turbinadas). Cadastro grátis e saque por PIX." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6238667e-35af-42ae-99cb-38d532aa1c38/id-preview-50765500--195aa66d-9691-4731-b081-fe3d8d1601ac.lovable.app-1785236367138.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6238667e-35af-42ae-99cb-38d532aa1c38/id-preview-50765500--195aa66d-9691-4731-b081-fe3d8d1601ac.lovable.app-1785236367138.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
