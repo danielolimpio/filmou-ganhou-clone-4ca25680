@@ -143,20 +143,32 @@ function ComoFunciona() {
       <section id="app-minute" className="mt-16 scroll-mt-24">
         <p className="eyebrow">App</p>
         <h2 className="mt-2 text-2xl font-bold sm:text-3xl">Baixe o app Minute</h2>
-        <div className="panel mt-6 grid gap-4 p-6 sm:grid-cols-2">
-          <div className="rounded-xl bg-secondary p-5">
-            <h3 className="text-sm font-semibold">1. Instale o app</h3>
+        <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
+          O app Minute é onde você grava sua rotina diária e recebe por cada minuto aprovado. É bem
+          simples.
+        </p>
+        <div className="panel mt-6 p-6">
+          <h3 className="text-sm font-semibold">1. Baixe o app</h3>
+          <p className="mt-1.5 text-sm text-muted-foreground">
+            Escaneie um código ou toque em um botão da loja para instalar o Minute.
+          </p>
+          <StoreBadges className="mt-5" />
+        </div>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          <div className="panel p-5">
+            <h3 className="text-sm font-semibold">2. Verifique seu aparelho</h3>
             <p className="mt-1.5 text-sm text-muted-foreground">
               Disponível para iPhone e Android compatíveis. Verifique seu aparelho direto no app.
             </p>
           </div>
-          <div className="rounded-xl bg-primary-soft p-5">
-            <h3 className="text-sm font-semibold">2. Use seu código de convite</h3>
+          <div className="panel p-5">
+            <h3 className="text-sm font-semibold">3. Use seu código de convite</h3>
             <p className="mt-1.5 text-sm text-muted-foreground">
               Entre com o código recebido no cadastro para liberar as tarefas pagas.
             </p>
           </div>
         </div>
+
       </section>
 
       <section id="gravacao" className="mt-16 scroll-mt-24">
