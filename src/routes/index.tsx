@@ -87,7 +87,7 @@ function Index() {
       </section>
 
       {/* VÍDEO EM DESTAQUE */}
-      <FeaturedVideo />
+      <FeaturedVideo showSteps />
 
 
       {/* DESTAQUES */}
