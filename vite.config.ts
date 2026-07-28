@@ -11,5 +11,19 @@ export default defineConfig({
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    // Gera HTML estático de todas as páginas (necessário para hospedagem FTP na Hostinger)
+    prerender: { enabled: true, crawlLinks: true },
+    pages: [
+      { path: "/" },
+      { path: "/sobre" },
+      { path: "/como-funciona" },
+      { path: "/tutoriais" },
+      { path: "/starter-kit" },
+      { path: "/contato" },
+      { path: "/cadastro" },
+      { path: "/entrar" },
+      { path: "/termos-de-uso" },
+      { path: "/politica-de-privacidade" },
+    ],
   },
 });
