@@ -17,7 +17,7 @@ export function VideoCarousel() {
           <figure
             key={slide.city + slide.task}
             role="listitem"
-            className="w-[196px] shrink-0 snap-start sm:w-[208px]"
+            className="w-[150px] shrink-0 snap-start sm:w-[172px]"
           >
             <div className="relative aspect-[9/16] overflow-hidden rounded-xl bg-muted shadow-[var(--shadow-card)]">
               {slide.src ? (
