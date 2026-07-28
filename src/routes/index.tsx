@@ -3,6 +3,8 @@ import { ArrowRight, BarChart3, CheckCircle2, Play } from "lucide-react";
 import robot from "@/assets/robot.webp.asset.json";
 import { Button } from "@/components/ui/button";
 import { VideoCarousel } from "@/components/site/video-carousel";
+import { FeaturedVideo } from "@/components/site/featured-video";
+
 import { FaqSection, CtaSection } from "@/components/site/sections";
 import { faqSchema } from "@/lib/site-data";
 
