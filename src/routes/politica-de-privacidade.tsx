@@ -4,17 +4,17 @@ import { Breadcrumbs, breadcrumbSchema } from "@/components/site/breadcrumbs";
 export const Route = createFileRoute("/politica-de-privacidade")({
   head: () => ({
     meta: [
-      { title: "Política de Privacidade — Hub" },
+      { title: "Política de Privacidade — Hub Data" },
       {
         name: "description",
         content:
           "Como a Hub coleta, usa e protege seus dados pessoais e as gravações enviadas pelo app Minute, em conformidade com a LGPD.",
       },
-      { property: "og:title", content: "Política de Privacidade — Hub" },
+      { property: "og:title", content: "Política de Privacidade — Hub Data" },
       { property: "og:description", content: "Tratamento de dados e gravações conforme a LGPD." },
-      { property: "og:url", content: "/politica-de-privacidade" },
+      { property: "og:url", content: "https://hubdata.org/politica-de-privacidade" },
     ],
-    links: [{ rel: "canonical", href: "/politica-de-privacidade" }],
+    links: [{ rel: "canonical", href: "https://hubdata.org/politica-de-privacidade" }],
     scripts: [
       {
         type: "application/ld+json",

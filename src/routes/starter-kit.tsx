@@ -7,20 +7,20 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/starter-kit")({
   head: () => ({
     meta: [
-      { title: "Starter Kit grátis — faixa de cabeça e suporte | Hub" },
+      { title: "Starter Kit grátis: faixa de cabeça para gravar com o celular | Hub Data" },
       {
         name: "description",
         content:
           "Peça o Starter Kit gratuito da Hub: faixa de cabeça com suporte para celular, guia de gravação e etiqueta. Envio sem custo para todo o Brasil.",
       },
-      { property: "og:title", content: "Starter Kit grátis — Hub" },
+      { property: "og:title", content: "Starter Kit grátis — Hub Data" },
       {
         property: "og:description",
         content: "Tudo o que você precisa para começar a gravar, enviado sem custo.",
       },
-      { property: "og:url", content: "/starter-kit" },
+      { property: "og:url", content: "https://hubdata.org/starter-kit" },
     ],
-    links: [{ rel: "canonical", href: "/starter-kit" }],
+    links: [{ rel: "canonical", href: "https://hubdata.org/starter-kit" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -34,7 +34,7 @@ export const Route = createFileRoute("/starter-kit")({
           name: "Starter Kit Hub",
           description:
             "Faixa de cabeça com suporte para celular, guia de gravação e etiqueta de identificação.",
-          brand: { "@type": "Brand", name: "Hub" },
+          brand: { "@type": "Brand", name: "Hub Data" },
           offers: { "@type": "Offer", price: "0", priceCurrency: "BRL", availability: "https://schema.org/InStock" },
         }),
       },

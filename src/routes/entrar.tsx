@@ -8,18 +8,18 @@ import { Label } from "@/components/ui/label";
 export const Route = createFileRoute("/entrar")({
   head: () => ({
     meta: [
-      { title: "Entrar na sua conta Hub" },
+      { title: "Entrar na sua conta Hub Data" },
       {
         name: "description",
         content:
           "Acesse sua conta Hub para acompanhar horas gravadas, taxa de aprovação, ganhos e saques por PIX.",
       },
-      { property: "og:title", content: "Entrar — Hub" },
+      { property: "og:title", content: "Entrar — Hub Data" },
       { property: "og:description", content: "Acesse seu painel de ganhos e gravações." },
-      { property: "og:url", content: "/entrar" },
+      { property: "og:url", content: "https://hubdata.org/entrar" },
       { name: "robots", content: "noindex" },
     ],
-    links: [{ rel: "canonical", href: "/entrar" }],
+    links: [{ rel: "canonical", href: "https://hubdata.org/entrar" }],
     scripts: [
       {
         type: "application/ld+json",
