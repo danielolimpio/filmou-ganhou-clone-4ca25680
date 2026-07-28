@@ -83,7 +83,15 @@ export const TASK_CATEGORIES = [
   { slug: "organizacao", name: "Organização", desc: "Prateleiras, gavetas, reciclagem, correspondência" },
 ];
 
-/** Estrutura pronta para o carrossel de vídeos (mídia será enviada depois). */
+/** Carrossel de vídeos da home. */
+import clip3 from "@/assets/videos/clip-3.mp4.asset.json";
+import clip8 from "@/assets/videos/clip-8.mp4.asset.json";
+import clip11 from "@/assets/videos/clip-11.mp4.asset.json";
+import clip18 from "@/assets/videos/clip-18.mp4.asset.json";
+import clip19 from "@/assets/videos/clip-19.mp4.asset.json";
+import clip20 from "@/assets/videos/clip-20.mp4.asset.json";
+import clip21 from "@/assets/videos/clip-21.mp4.asset.json";
+
 export interface VideoSlide {
   city: string;
   task: string;
@@ -92,12 +100,12 @@ export interface VideoSlide {
 }
 
 export const VIDEO_SLIDES: VideoSlide[] = [
-  { city: "Manaus, BR", task: "Reposição e organização de prateleiras" },
-  { city: "Salvador, BR", task: "Reparar e pintar paredes" },
-  { city: "Brasília, BR", task: "Passear com o cachorro" },
-  { city: "Campinas, BR", task: "Serviços de beleza / Cuidados pessoais" },
-  { city: "Santos, BR", task: "Coleta e checagem de ovos" },
-  { city: "Porto Alegre, BR", task: "Dobrar e organizar roupas" },
-  { city: "Recife, BR", task: "Montagem de móveis" },
-  { city: "Curitiba, BR", task: "Lavagem do carro" },
+  { city: "Manaus, BR", task: "Reposição e organização de prateleiras", src: clip3.url },
+  { city: "Salvador, BR", task: "Reparar e pintar paredes", src: clip8.url },
+  { city: "Brasília, BR", task: "Passear com o cachorro", src: clip11.url },
+  { city: "Campinas, BR", task: "Serviços de beleza / Cuidados pessoais", src: clip18.url },
+  { city: "Santos, BR", task: "Coleta e checagem de ovos", src: clip19.url },
+  { city: "Porto Alegre, BR", task: "Dobrar e organizar roupas", src: clip20.url },
+  { city: "Recife, BR", task: "Montagem de móveis", src: clip21.url },
 ];
+
