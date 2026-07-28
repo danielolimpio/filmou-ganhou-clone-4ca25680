@@ -9,13 +9,13 @@ import { Label } from "@/components/ui/label";
 export const Route = createFileRoute("/cadastro")({
   head: () => ({
     meta: [
-      { title: "Cadastre-se grátis e ganhe R$ 30/h gravando | Hub" },
+      { title: "Cadastro grátis: ganhe R$ 30/h gravando vídeos em casa | Hub Data" },
       {
         name: "description",
         content:
-          "Crie sua conta grátis na Hub, receba o Starter Kit sem custo e comece a ganhar R$ 30 por hora aprovada gravando tarefas do dia a dia.",
+          "Crie sua conta grátis na Hub Data, receba o Starter Kit sem custo e comece a ganhar R$ 30 por hora aprovada gravando tarefas do dia a dia em casa, com saque via PIX.",
       },
-      { property: "og:title", content: "Cadastre-se grátis — Hub" },
+      { property: "og:title", content: "Cadastre-se grátis — Hub Data" },
       { property: "og:description", content: "Cadastro em minutos, sem custo e sem experiência." },
       { property: "og:url", content: "https://hubdata.org/cadastro" },
     ],

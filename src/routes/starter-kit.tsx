@@ -34,7 +34,7 @@ export const Route = createFileRoute("/starter-kit")({
           name: "Starter Kit Hub",
           description:
             "Faixa de cabeça com suporte para celular, guia de gravação e etiqueta de identificação.",
-          brand: { "@type": "Brand", name: "Hub" },
+          brand: { "@type": "Brand", name: "Hub Data" },
           offers: { "@type": "Offer", price: "0", priceCurrency: "BRL", availability: "https://schema.org/InStock" },
         }),
       },

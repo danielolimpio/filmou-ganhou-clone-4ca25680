@@ -10,13 +10,13 @@ import { Textarea } from "@/components/ui/textarea";
 export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
-      { title: "Contato — fale com a equipe Hub" },
+      { title: "Contato — fale com a equipe Hub Data" },
       {
         name: "description",
         content:
           "Fale com a Hub sobre cadastro, Starter Kit, gravações, aprovação de vídeos ou pagamentos por PIX. Atendimento em português.",
       },
-      { property: "og:title", content: "Contato — Hub" },
+      { property: "og:title", content: "Contato — Hub Data" },
       { property: "og:description", content: "Tire dúvidas sobre gravações e pagamentos." },
       { property: "og:url", content: "https://hubdata.org/contato" },
     ],
