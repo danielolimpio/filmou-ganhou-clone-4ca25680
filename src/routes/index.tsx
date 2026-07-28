@@ -84,8 +84,9 @@ function Index() {
         </div>
       </section>
 
-      {/* CARROSSEL DE VÍDEOS */}
-      <VideoCarousel />
+      {/* VÍDEO EM DESTAQUE */}
+      <FeaturedVideo />
+
 
       {/* DESTAQUES */}
       <section className="mx-auto grid w-full max-w-6xl gap-4 px-4 sm:px-6 md:grid-cols-2">
