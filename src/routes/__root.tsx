@@ -98,8 +98,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:title", content: "Hub Data — ganhe dinheiro gravando vídeos em casa: R$ 30/h no PIX" },
       { property: "og:description", content: "Renda extra em casa gravando tarefas do dia a dia com o celular: até R$ 30 por hora aprovada, saque via PIX e cadastro grátis na Hub Data." },
       { name: "twitter:description", content: "Renda extra em casa gravando tarefas do dia a dia com o celular: até R$ 30 por hora aprovada, saque via PIX e cadastro grátis na Hub Data." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6238667e-35af-42ae-99cb-38d532aa1c38/id-preview-50765500--195aa66d-9691-4731-b081-fe3d8d1601ac.lovable.app-1785236367138.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6238667e-35af-42ae-99cb-38d532aa1c38/id-preview-50765500--195aa66d-9691-4731-b081-fe3d8d1601ac.lovable.app-1785236367138.png" },
+      { property: "og:image", content: "https://hubdata.org/media/robot.webp" },
+      { name: "twitter:image", content: "https://hubdata.org/media/robot.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
