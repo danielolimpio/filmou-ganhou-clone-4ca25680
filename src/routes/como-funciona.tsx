@@ -311,15 +311,13 @@ function ComoFunciona() {
         </div>
 
 
-        <h3 className="mt-8 text-sm font-semibold">Categorias de tarefas aceitas</h3>
-        <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {TASK_CATEGORIES.map((c) => (
-            <article key={c.slug} className="panel p-4">
-              <h4 className="text-sm font-semibold">{c.name}</h4>
-              <p className="mt-1 text-xs text-muted-foreground">{c.desc}</p>
-            </article>
-          ))}
-        </div>
+        <h3 className="mt-10 text-2xl font-bold sm:text-3xl">O que gravar</h3>
+        <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
+          Você não precisa sair de casa. As coisas que você já faz no dia a dia valem dinheiro na
+          plataforma. Toque na setinha para ver as ideias de cada categoria.
+        </p>
+        <TaskCategories />
+
         <p className="mt-4 rounded-xl bg-primary-soft px-4 py-3 text-sm text-accent-foreground">
           As Tarefas turbinadas pagam mais: até R$ 30 por hora aprovada.
         </p>
