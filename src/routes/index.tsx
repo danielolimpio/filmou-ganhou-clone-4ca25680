@@ -139,7 +139,11 @@ function Index() {
         </div>
       </section>
 
+      {/* CARROSSEL DE VÍDEOS */}
+      <VideoCarousel />
+
       <FaqSection />
+
       <CtaSection />
     </>
   );
