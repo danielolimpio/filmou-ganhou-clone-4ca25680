@@ -1,5 +1,8 @@
+import { Video } from "lucide-react";
 import defaultVideo from "@/assets/videos/record-tutorial.mp4.asset.json";
 import defaultPoster from "@/assets/videos/record-tutorial-poster.jpg.asset.json";
+import starterKitIcon from "@/assets/intro-starter-kit.png.asset.json";
+import minuteIcon from "@/assets/minute-icon.webp.asset.json";
 
 type FeaturedVideoProps = {
   src?: string;
@@ -7,7 +10,32 @@ type FeaturedVideoProps = {
   eyebrow?: string;
   title?: string;
   description?: string;
+  showSteps?: boolean;
 };
+
+const STEPS = [
+  {
+    n: 1,
+    title: "Peça um Starter Kit",
+    desc: "Faixa de cabeça e suporte grátis, enviados até você.",
+    img: starterKitIcon.url,
+    alt: "Robô usando a faixa de cabeça com suporte para celular",
+  },
+  {
+    n: 2,
+    title: "Baixe o app Minute",
+    desc: "Crie sua conta e vincule com seu código de organização.",
+    img: minuteIcon.url,
+    alt: "Ícone do app Minute",
+  },
+  {
+    n: 3,
+    title: "Grave e ganhe",
+    desc: "Filme suas tarefas do dia a dia e receba pelo tempo aprovado.",
+    icon: Video,
+    alt: "Ícone de câmera de vídeo",
+  },
+];
 
 /** Vídeo em destaque com moldura premium (anel em gradiente + brilho). */
 export function FeaturedVideo({
@@ -16,6 +44,7 @@ export function FeaturedVideo({
   eyebrow = "Veja na prática",
   title = "Assim é uma gravação aprovada",
   description = "Celular preso na faixa de cabeça, tarefa real do começo ao fim e enquadramento na altura dos olhos. É simples assim — e cada hora aprovada vale até R$ 30.",
+  showSteps = false,
 }: FeaturedVideoProps = {}) {
   return (
     <section
@@ -31,6 +60,41 @@ export function FeaturedVideo({
             {title}
           </h2>
           <p className="mt-4 text-muted-foreground">{description}</p>
+
+          {showSteps && (
+            <div className="mt-8">
+              <h3 className="text-2xl font-bold leading-tight tracking-tight text-primary sm:text-[1.65rem]">
+                Comece a ganhar R$ 30/hora em 3 passos simples
+              </h3>
+              <span className="mt-3 block h-1 w-24 rounded-full bg-primary" aria-hidden />
+
+              <ol className="mt-6 space-y-3">
+                {STEPS.map((s) => (
+                  <li
+                    key={s.n}
+                    className="flex items-center gap-4 rounded-2xl border border-border bg-card p-4 shadow-[0_10px_28px_-20px_rgba(0,0,0,0.5)]"
+                  >
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary-soft text-xs font-bold text-primary">
+                      {s.n}
+                    </span>
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl">
+                      {s.img ? (
+                        <img src={s.img} alt={s.alt} loading="lazy" className="h-11 w-11 object-contain" />
+                      ) : (
+                        <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-soft text-primary">
+                          {s.icon ? <s.icon className="h-6 w-6" /> : null}
+                        </span>
+                      )}
+                    </span>
+                    <span>
+                      <span className="block text-base font-semibold">{s.title}</span>
+                      <span className="mt-0.5 block text-sm text-muted-foreground">{s.desc}</span>
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
         </div>
 
         <div className="mx-auto w-full max-w-[300px]">

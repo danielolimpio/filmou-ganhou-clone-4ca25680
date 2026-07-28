@@ -120,6 +120,7 @@ function ComoFunciona() {
         eyebrow="Vídeo em destaque"
         title="Veja o passo a passo em vídeo"
         description="Do cadastro à gravação: acompanhe uma demonstração completa de como usar a faixa de cabeça, iniciar a tarefa no app Minute e enviar o vídeo para aprovação."
+        showSteps
       />
 
 
