@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Camera, CheckCircle2, CreditCard, ShieldAlert, Smartphone, Wallet } from "lucide-react";
+import { ArrowRight, BatteryCharging, Camera, CheckCircle2, CreditCard, RotateCcw, Smartphone, Sparkles, Sun, Volume2, Wallet, XCircle } from "lucide-react";
 import hiwVideo from "@/assets/videos/how-it-works.mp4.asset.json";
 import hiwPoster from "@/assets/videos/how-it-works-poster.jpg.asset.json";
 import { Breadcrumbs, breadcrumbSchema } from "@/components/site/breadcrumbs";
@@ -8,6 +8,7 @@ import { EarningsCalculator } from "@/components/site/earnings-calculator";
 import { FaqSection, CtaSection } from "@/components/site/sections";
 import { Button } from "@/components/ui/button";
 import { StoreBadges } from "@/components/site/store-badges";
+import { OrgCodeCard, AppScreens } from "@/components/site/app-onboarding";
 import { faqSchema, TASK_CATEGORIES } from "@/lib/site-data";
 
 export const Route = createFileRoute("/como-funciona")({
@@ -62,17 +63,24 @@ const STEPS = [
 ];
 
 const GOOD = [
-  "Vídeo estável e na horizontal do ponto de vista",
-  "Tarefa completa, do começo ao fim",
-  "Ambiente iluminado e som limpo",
-  "Mãos visíveis durante toda a execução",
+  "Visão estável da testa, levemente para baixo",
+  "Mãos e dedos visíveis enquanto você trabalha",
+  "Imagem nítida e bem iluminada",
+  "Uma tarefa completa, em ritmo natural",
 ];
 
 const BAD = [
-  "Vídeo tremido ou fora de foco",
-  "Tarefa cortada pela metade",
-  "Rostos de terceiros sem consentimento",
-  "Conteúdo gravado em local público restrito",
+  "Câmera tremida, inclinada ou obstruída, ou pouca luz",
+  "Mãos levantadas de propósito ou movimento robótico",
+  "Mãos fora do quadro mais de 10% do tempo",
+  "Sentado, pausas longas ou tarefas encenadas",
+];
+
+const ENVIRONMENT = [
+  { icon: Sun, label: "Boa iluminação, uniforme" },
+  { icon: Volume2, label: "Um ambiente calmo" },
+  { icon: Sparkles, label: "Lente limpa" },
+  { icon: BatteryCharging, label: "Celular carregado" },
 ];
 
 function ComoFunciona() {
@@ -149,56 +157,159 @@ function ComoFunciona() {
           simples.
         </p>
         <div className="panel mt-6 p-6">
-          <h3 className="text-sm font-semibold">1. Baixe o app</h3>
-          <p className="mt-1.5 text-sm text-muted-foreground">
-            Escaneie um código ou toque em um botão da loja para instalar o Minute.
-          </p>
-          <StoreBadges className="mt-5" />
-        </div>
-        <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          <div className="panel p-5">
-            <h3 className="text-sm font-semibold">2. Verifique seu aparelho</h3>
-            <p className="mt-1.5 text-sm text-muted-foreground">
-              Disponível para iPhone e Android compatíveis. Verifique seu aparelho direto no app.
-            </p>
-          </div>
-          <div className="panel p-5">
-            <h3 className="text-sm font-semibold">3. Use seu código de convite</h3>
-            <p className="mt-1.5 text-sm text-muted-foreground">
-              Entre com o código recebido no cadastro para liberar as tarefas pagas.
-            </p>
+          <div className="flex gap-4">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary-soft text-sm font-bold text-primary">
+              1
+            </span>
+            <div className="w-full">
+              <h3 className="text-base font-semibold">Baixe o app</h3>
+              <p className="mt-1.5 text-sm text-muted-foreground">
+                Escaneie um código ou toque em um botão da loja para instalar o Minute.
+              </p>
+              <StoreBadges className="mt-5" />
+            </div>
           </div>
         </div>
 
+        <div className="panel mt-4 p-6">
+          <div className="flex gap-4">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary-soft text-sm font-bold text-primary">
+              2
+            </span>
+            <div className="w-full">
+              <h3 className="text-base font-semibold">Crie sua conta</h3>
+              <p className="mt-1.5 text-sm text-muted-foreground">
+                Use o mesmo e-mail da sua conta Hub para vincular as duas e digite seu código de
+                organização para liberar o acesso.
+              </p>
+              <OrgCodeCard />
+            </div>
+          </div>
+        </div>
+
+        <div className="panel mt-4 p-6">
+          <div className="flex gap-4">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary-soft text-sm font-bold text-primary">
+              3
+            </span>
+            <div className="w-full">
+              <h3 className="text-base font-semibold">Escolha uma tarefa, toque em Play e grave</h3>
+              <p className="mt-1.5 text-sm text-muted-foreground">
+                Escolha uma tarefa no app, toque em play e filme. É só isso.
+              </p>
+              <AppScreens />
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="gravacao" className="mt-16 scroll-mt-24">
-        <p className="eyebrow">Gravação</p>
+        <p className="eyebrow">Passo 3</p>
         <h2 className="mt-2 text-2xl font-bold sm:text-3xl">Como gravar bons vídeos</h2>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2">
-          <div className="panel p-6">
-            <h3 className="text-sm font-semibold text-primary">Faça</h3>
-            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-              {GOOD.map((g) => (
-                <li key={g} className="flex gap-2">
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                  {g}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="panel p-6">
-            <h3 className="text-sm font-semibold text-destructive">Evite</h3>
-            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-              {BAD.map((b) => (
-                <li key={b} className="flex gap-2">
-                  <ShieldAlert className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
-                  {b}
-                </li>
-              ))}
-            </ul>
+
+        <div className="mt-6 flex gap-4">
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary-soft text-sm font-bold text-primary">
+            1
+          </span>
+          <div className="w-full">
+            <h3 className="text-base font-semibold">Posicione seu celular</h3>
+            <p className="mt-1.5 text-sm text-muted-foreground">
+              Prenda o celular na testa, inclinado uns 45º para baixo para que suas mãos e pés
+              fiquem no quadro. Grave na horizontal (celular deitado).
+            </p>
+            <p className="eyebrow mt-5">Teste de ângulo</p>
+            <div className="mt-3 grid gap-3 sm:grid-cols-2">
+              <div className="flex items-center gap-3 rounded-2xl border border-destructive/25 bg-destructive/10 p-4">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-destructive/15 text-destructive">
+                  <XCircle className="h-4 w-4" />
+                </span>
+                <div>
+                  <p className="text-sm font-bold text-destructive">ERRADO</p>
+                  <p className="text-sm text-muted-foreground">Você só vê a parede</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 rounded-2xl border border-primary/25 bg-primary-soft p-4">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/15 text-primary">
+                  <CheckCircle2 className="h-4 w-4" />
+                </span>
+                <div>
+                  <p className="text-sm font-bold text-primary">CERTO</p>
+                  <p className="text-sm text-muted-foreground">Mãos e pés visíveis</p>
+                </div>
+              </div>
+            </div>
+            <p className="mt-3 flex items-center gap-2 rounded-2xl border border-primary/25 bg-primary-soft px-4 py-3 text-sm text-accent-foreground">
+              <RotateCcw className="h-4 w-4 shrink-0 text-primary" />
+              Grave na horizontal: vire o celular de lado na faixa.
+            </p>
           </div>
         </div>
+
+        <div className="mt-10 flex gap-4">
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary-soft text-sm font-bold text-primary">
+            2
+          </span>
+          <div className="w-full">
+            <h3 className="text-base font-semibold">Prepare o ambiente</h3>
+            <p className="mt-1.5 text-sm text-muted-foreground">
+              Boa iluminação e uniforme (luz natural é melhor), um ambiente calmo, a lente limpa e o
+              celular carregado ou uma bateria portátil.
+            </p>
+            <div className="mt-4 grid gap-3 grid-cols-2 lg:grid-cols-4">
+              {ENVIRONMENT.map((e) => (
+                <div key={e.label} className="panel flex flex-col items-center gap-3 p-5 text-center">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary-soft text-primary">
+                    <e.icon className="h-5 w-5" />
+                  </span>
+                  <p className="text-sm text-muted-foreground">{e.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10 flex gap-4">
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary-soft text-sm font-bold text-primary">
+            3
+          </span>
+          <div className="w-full">
+            <h3 className="text-base font-semibold">Faça de verdade</h3>
+            <p className="mt-1.5 text-sm text-muted-foreground">
+              Trabalhe no seu ritmo natural e complete uma tarefa do início ao fim. Mantenha as mãos
+              no quadro ao pegar, segurar ou soltar. Não trabalhe devagar de propósito, nem faça
+              tarefas falsas ou repetitivas.
+            </p>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2">
+              <div className="rounded-2xl border border-primary/25 bg-primary-soft p-5">
+                <h4 className="flex items-center gap-2 text-base font-semibold text-primary">
+                  <CheckCircle2 className="h-4 w-4" />O que é aprovado
+                </h4>
+                <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
+                  {GOOD.map((g) => (
+                    <li key={g} className="flex gap-2">
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                      {g}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-destructive/25 bg-destructive/10 p-5">
+                <h4 className="flex items-center gap-2 text-base font-semibold text-destructive">
+                  <XCircle className="h-4 w-4" />O que é rejeitado
+                </h4>
+                <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
+                  {BAD.map((b) => (
+                    <li key={b} className="flex gap-2">
+                      <XCircle className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <h3 className="mt-8 text-sm font-semibold">Categorias de tarefas aceitas</h3>
         <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
