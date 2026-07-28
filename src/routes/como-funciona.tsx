@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Camera, CheckCircle2, CreditCard, ShieldAlert, Smartphone, Wallet } from "lucide-react";
+import { ArrowRight, BatteryCharging, Camera, CheckCircle2, CreditCard, RotateCcw, ShieldAlert, Smartphone, Sparkles, Sun, Volume2, Wallet, XCircle } from "lucide-react";
 import hiwVideo from "@/assets/videos/how-it-works.mp4.asset.json";
 import hiwPoster from "@/assets/videos/how-it-works-poster.jpg.asset.json";
 import { Breadcrumbs, breadcrumbSchema } from "@/components/site/breadcrumbs";
@@ -8,6 +8,7 @@ import { EarningsCalculator } from "@/components/site/earnings-calculator";
 import { FaqSection, CtaSection } from "@/components/site/sections";
 import { Button } from "@/components/ui/button";
 import { StoreBadges } from "@/components/site/store-badges";
+import { OrgCodeCard, AppScreens } from "@/components/site/app-onboarding";
 import { faqSchema, TASK_CATEGORIES } from "@/lib/site-data";
 
 export const Route = createFileRoute("/como-funciona")({
@@ -62,17 +63,24 @@ const STEPS = [
 ];
 
 const GOOD = [
-  "Vídeo estável e na horizontal do ponto de vista",
-  "Tarefa completa, do começo ao fim",
-  "Ambiente iluminado e som limpo",
-  "Mãos visíveis durante toda a execução",
+  "Visão estável da testa, levemente para baixo",
+  "Mãos e dedos visíveis enquanto você trabalha",
+  "Imagem nítida e bem iluminada",
+  "Uma tarefa completa, em ritmo natural",
 ];
 
 const BAD = [
-  "Vídeo tremido ou fora de foco",
-  "Tarefa cortada pela metade",
-  "Rostos de terceiros sem consentimento",
-  "Conteúdo gravado em local público restrito",
+  "Câmera tremida, inclinada ou obstruída, ou pouca luz",
+  "Mãos levantadas de propósito ou movimento robótico",
+  "Mãos fora do quadro mais de 10% do tempo",
+  "Sentado, pausas longas ou tarefas encenadas",
+];
+
+const ENVIRONMENT = [
+  { icon: Sun, label: "Boa iluminação, uniforme" },
+  { icon: Volume2, label: "Um ambiente calmo" },
+  { icon: Sparkles, label: "Lente limpa" },
+  { icon: BatteryCharging, label: "Celular carregado" },
 ];
 
 function ComoFunciona() {
