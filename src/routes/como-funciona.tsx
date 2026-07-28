@@ -9,7 +9,8 @@ import { FaqSection, CtaSection } from "@/components/site/sections";
 import { Button } from "@/components/ui/button";
 import { StoreBadges } from "@/components/site/store-badges";
 import { OrgCodeCard, AppScreens } from "@/components/site/app-onboarding";
-import { faqSchema, TASK_CATEGORIES } from "@/lib/site-data";
+import { TaskCategories } from "@/components/site/task-categories";
+import { faqSchema } from "@/lib/site-data";
 
 export const Route = createFileRoute("/como-funciona")({
   head: () => ({
