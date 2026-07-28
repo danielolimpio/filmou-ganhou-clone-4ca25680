@@ -52,7 +52,7 @@ function Index() {
 
               <div className="mt-7 flex flex-wrap gap-3">
                 <Button asChild size="lg" className="rounded-full px-6 shadow-[var(--shadow-cta)]">
-                  <Link to="/cadastro">Cadastre-se</Link>
+                  <a href="https://ai.hub.xyz/r/VNE8A8D7" target="_blank" rel="noopener noreferrer">Cadastre-se</a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="rounded-full px-6">
                   <Link to="/como-funciona">
@@ -131,7 +131,7 @@ function Index() {
             </span>
           </div>
           <Button asChild className="mt-7 rounded-full px-6 shadow-[var(--shadow-cta)]">
-            <Link to="/cadastro">
+            <a href="https://ai.hub.xyz/r/VNE8A8D7" target="_blank" rel="noopener noreferrer">
               Quero começar a ganhar
               <ArrowRight className="h-4 w-4" />
             </Link>

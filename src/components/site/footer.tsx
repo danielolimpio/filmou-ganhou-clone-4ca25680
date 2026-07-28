@@ -34,10 +34,10 @@ export function Footer() {
             </p>
             <div className="mt-5 flex gap-2">
               <Button asChild size="sm" className="rounded-full px-4">
-                <Link to="/cadastro">Cadastre-se</Link>
+                <a href="https://ai.hub.xyz/r/VNE8A8D7" target="_blank" rel="noopener noreferrer">Cadastre-se</a>
               </Button>
               <Button asChild size="sm" variant="outline" className="rounded-full px-4">
-                <Link to="/entrar">Entrar</Link>
+                <a href="https://ai.hub.xyz/" target="_blank" rel="noopener noreferrer">Entrar</a>
               </Button>
             </div>
           </div>
