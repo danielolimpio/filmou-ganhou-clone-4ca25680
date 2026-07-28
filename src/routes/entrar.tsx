@@ -14,7 +14,7 @@ export const Route = createFileRoute("/entrar")({
         content:
           "Acesse sua conta Hub para acompanhar horas gravadas, taxa de aprovação, ganhos e saques por PIX.",
       },
-      { property: "og:title", content: "Entrar — Hub" },
+      { property: "og:title", content: "Entrar — Hub Data" },
       { property: "og:description", content: "Acesse seu painel de ganhos e gravações." },
       { property: "og:url", content: "https://hubdata.org/entrar" },
       { name: "robots", content: "noindex" },

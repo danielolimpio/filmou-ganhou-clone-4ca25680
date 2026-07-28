@@ -13,7 +13,7 @@ export const Route = createFileRoute("/starter-kit")({
         content:
           "Peça o Starter Kit gratuito da Hub: faixa de cabeça com suporte para celular, guia de gravação e etiqueta. Envio sem custo para todo o Brasil.",
       },
-      { property: "og:title", content: "Starter Kit grátis — Hub" },
+      { property: "og:title", content: "Starter Kit grátis — Hub Data" },
       {
         property: "og:description",
         content: "Tudo o que você precisa para começar a gravar, enviado sem custo.",

@@ -4,13 +4,13 @@ import { Breadcrumbs, breadcrumbSchema } from "@/components/site/breadcrumbs";
 export const Route = createFileRoute("/termos-de-uso")({
   head: () => ({
     meta: [
-      { title: "Termos de Uso — Hub" },
+      { title: "Termos de Uso — Hub Data" },
       {
         name: "description",
         content:
           "Regras de participação na Hub: elegibilidade, envio de gravações, critérios de aprovação, pagamento por hora e uso do Starter Kit.",
       },
-      { property: "og:title", content: "Termos de Uso — Hub" },
+      { property: "og:title", content: "Termos de Uso — Hub Data" },
       { property: "og:description", content: "Regras de participação, aprovação e pagamento." },
       { property: "og:url", content: "https://hubdata.org/termos-de-uso" },
     ],
