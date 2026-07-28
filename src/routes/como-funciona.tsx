@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Camera, CheckCircle2, CreditCard, ShieldAlert, Smartphone, Wallet } from "lucide-react";
+import hiwVideo from "@/assets/videos/how-it-works.mp4.asset.json";
+import hiwPoster from "@/assets/videos/how-it-works-poster.jpg.asset.json";
 import { Breadcrumbs, breadcrumbSchema } from "@/components/site/breadcrumbs";
+import { FeaturedVideo } from "@/components/site/featured-video";
 import { EarningsCalculator } from "@/components/site/earnings-calculator";
 import { FaqSection, CtaSection } from "@/components/site/sections";
 import { Button } from "@/components/ui/button";
