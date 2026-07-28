@@ -55,7 +55,7 @@ export function CtaSection() {
     <section className="mx-auto w-full max-w-5xl px-4 pb-4 sm:px-6">
       <div className="rounded-3xl bg-primary px-6 py-12 text-center shadow-[var(--shadow-cta)]">
         <h2 className="text-2xl font-bold text-primary-foreground sm:text-3xl">
-          Pronto para começar a ganhar R$ 25/hora?
+          Pronto para começar a ganhar R$ 30/hora?
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-sm text-primary-foreground/85">
           Cadastro grátis. Starter Kit sem custo. Saque por PIX quando quiser.

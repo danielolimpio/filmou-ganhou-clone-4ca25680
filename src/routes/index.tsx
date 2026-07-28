@@ -11,17 +11,17 @@ import { faqSchema } from "@/lib/site-data";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hub — Filmou, Ganhou: grave tarefas e ganhe R$ 25/h" },
+      { title: "Hub — Filmou, Ganhou: grave tarefas e ganhe R$ 30/h" },
       {
         name: "description",
         content:
-          "Grave tarefas do mundo real pelo seu celular e receba R$ 25/h por gravações aprovadas (até R$ 30/h em tarefas turbinadas). Cadastro grátis e saque por PIX.",
+          "Grave tarefas do mundo real pelo seu celular e receba até R$ 30/h por gravações aprovadas. Cadastro grátis e saque por PIX.",
       },
-      { property: "og:title", content: "Hub — Filmou, Ganhou: grave tarefas e ganhe R$ 25/h" },
+      { property: "og:title", content: "Hub — Filmou, Ganhou: grave tarefas e ganhe R$ 30/h" },
       {
         property: "og:description",
         content:
-          "Grave tarefas do mundo real pelo seu celular e receba R$ 25/h por gravações aprovadas (até R$ 30/h em tarefas turbinadas). Cadastro grátis e saque por PIX.",
+          "Grave tarefas do mundo real pelo seu celular e receba até R$ 30/h por gravações aprovadas. Cadastro grátis e saque por PIX.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -47,7 +47,7 @@ function Index() {
               <p className="mt-5 text-muted-foreground">
                 Grave tarefas do mundo real pelo seu celular.
               </p>
-              <p className="mt-6 text-4xl font-bold text-primary sm:text-5xl">R$ 25/h</p>
+              <p className="mt-6 text-4xl font-bold text-primary sm:text-5xl">R$ 30/h</p>
               <p className="mt-1 text-sm text-muted-foreground">por gravações aprovadas</p>
 
               <div className="mt-7 flex flex-wrap gap-3">

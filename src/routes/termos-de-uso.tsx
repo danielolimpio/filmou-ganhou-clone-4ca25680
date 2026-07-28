@@ -42,7 +42,7 @@ const SECTIONS = [
   },
   {
     h: "4. Aprovação e pagamento",
-    p: "Cada gravação é revisada em até 48 horas. Horas aprovadas são creditadas ao valor de R$ 25/h, podendo chegar a R$ 30/h em tarefas turbinadas. Material rejeitado não é pago.",
+    p: "Cada gravação é revisada em até 48 horas. Horas aprovadas são creditadas ao valor de até R$ 30/h. Material rejeitado não é pago.",
   },
   {
     h: "5. Saques",
