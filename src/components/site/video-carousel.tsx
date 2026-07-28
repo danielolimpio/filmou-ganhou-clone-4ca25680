@@ -19,16 +19,18 @@ export function VideoCarousel() {
             role="listitem"
             className="w-[196px] shrink-0 snap-start sm:w-[208px]"
           >
-            <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-muted shadow-[var(--shadow-card)]">
+            <div className="relative aspect-[9/16] overflow-hidden rounded-xl bg-muted shadow-[var(--shadow-card)]">
               {slide.src ? (
                 <video
-                  className="h-full w-full object-cover"
+                  className="h-full w-full scale-[1.02] object-cover"
                   src={slide.src}
                   poster={slide.poster}
+                  autoPlay
                   muted
                   loop
                   playsInline
-                  preload="none"
+                  preload="metadata"
+                  aria-label={`${slide.task} — ${slide.city}`}
                 />
               ) : (
                 <div className="flex h-full w-full items-center justify-center bg-secondary">
@@ -37,6 +39,7 @@ export function VideoCarousel() {
                 </div>
               )}
             </div>
+
             <figcaption className="mt-2 flex items-center gap-1.5 text-[11px] text-muted-foreground">
               <MapPin className="h-3 w-3 shrink-0" aria-hidden />
               <span className="truncate">
