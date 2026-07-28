@@ -10,7 +10,7 @@ export function VideoCarousel() {
   return (
     <section aria-label="Gravações da comunidade" className="w-full overflow-hidden py-10">
       <div
-        className="mx-auto flex w-full max-w-6xl snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-4 sm:px-6 lg:justify-center [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="mx-auto flex w-full snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-4 sm:px-6 lg:justify-center [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         role="list"
       >
         {VIDEO_SLIDES.map((slide) => (
