@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, BatteryCharging, Camera, CheckCircle2, CreditCard, RotateCcw, ShieldAlert, Smartphone, Sparkles, Sun, Volume2, Wallet, XCircle } from "lucide-react";
+import { ArrowRight, BatteryCharging, Camera, CheckCircle2, CreditCard, RotateCcw, Smartphone, Sparkles, Sun, Volume2, Wallet, XCircle } from "lucide-react";
 import hiwVideo from "@/assets/videos/how-it-works.mp4.asset.json";
 import hiwPoster from "@/assets/videos/how-it-works-poster.jpg.asset.json";
 import { Breadcrumbs, breadcrumbSchema } from "@/components/site/breadcrumbs";
