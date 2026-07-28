@@ -7,6 +7,7 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  nitro: process.env.STATIC_EXPORT ? false : undefined,
   tanstackStart: {
     // Gera HTML estático de todas as páginas (necessário para hospedagem FTP na Hostinger)
     prerender: { enabled: true, crawlLinks: true },
