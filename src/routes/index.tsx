@@ -134,7 +134,7 @@ function Index() {
             <a href="https://ai.hub.xyz/r/VNE8A8D7" target="_blank" rel="noopener noreferrer">
               Quero começar a ganhar
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </a>
           </Button>
         </div>
       </section>
