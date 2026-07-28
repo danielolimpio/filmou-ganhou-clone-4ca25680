@@ -48,10 +48,12 @@ function Index() {
                 Ganhou
               </h1>
               <p className="mt-5 text-muted-foreground">
-                Grave tarefas do mundo real pelo seu celular.
+                Ganhe dinheiro gravando tarefas do dia a dia com o celular. Trabalho em casa de
+                verdade: grave em casa, receba via PIX.
               </p>
               <p className="mt-6 text-4xl font-bold text-primary sm:text-5xl">R$ 30/h</p>
               <p className="mt-1 text-sm text-muted-foreground">por gravações aprovadas</p>
+
 
               <div className="mt-7 flex flex-wrap gap-3">
                 <Button asChild size="lg" className="rounded-full px-6 shadow-[var(--shadow-cta)]">
@@ -145,9 +147,47 @@ function Index() {
       {/* CARROSSEL DE VÍDEOS */}
       <VideoCarousel />
 
-      <FaqSection />
+      {/* ASSISTIR X GRAVAR */}
+      <WatchVsRecord />
+
+      {/* CONTEÚDO SEO */}
+      <section className="mx-auto w-full max-w-4xl px-4 pb-4 sm:px-6">
+        <h2 className="text-2xl font-bold sm:text-3xl">
+          Hub Data: a plataforma que paga por vídeos gravados em casa
+        </h2>
+        <div className="mt-4 space-y-4 text-sm leading-relaxed text-muted-foreground">
+          <p>
+            A Hub Data é uma plataforma que paga por vídeos usados para{" "}
+            <strong>treinar inteligência artificial</strong>. Em vez de prometer que você vai
+            enriquecer assistindo anúncios, a proposta é simples e verificável: você grava tarefas
+            reais do dia a dia com o celular preso à faixa de cabeça e recebe até R$ 30 por hora
+            aprovada, com saque via PIX. É uma forma concreta de conseguir{" "}
+            <strong>renda extra</strong> sem sair de casa, ideal para quem já trabalha em{" "}
+            <strong>home office</strong> ou procura <strong>trabalho em casa</strong> com horário
+            flexível.
+          </p>
+          <p>
+            Quem pesquisa como <strong>ganhar dinheiro na internet</strong> normalmente cai primeiro
+            em apps de assistir vídeos — Kwai, TikTok Lite, Swagbucks, InboxDollars — ou em sites que
+            prometem o “melhor site para ganhar dinheiro assistindo vídeos”. Eles funcionam, mas
+            pagam por visualização, e visualização é barata. Já o vídeo em primeira pessoa que a Hub
+            Data compra é escasso: nenhuma outra pessoa gravou exatamente aquela tarefa, naquele
+            ambiente, com aquelas mãos. Por isso o hub video de treinamento vale por hora, e não por
+            clique.
+          </p>
+          <p>
+            Também é diferente de plataformas de microtarefas como Appen, Clickworker, Toloka e
+            Remotasks: lá você anota dados em texto ou transcreve áudio; aqui você grava sua rotina
+            e pronto. Sem edição, sem aparecer o rosto, sem publicar em rede social, sem indicar
+            amigos. Cadastro grátis, Starter Kit grátis e pagamento direto na sua conta.
+          </p>
+        </div>
+      </section>
+
+      <FaqSection title="Perguntas frequentes sobre ganhar dinheiro gravando vídeos" />
 
       <CtaSection />
+
     </>
   );
 }
