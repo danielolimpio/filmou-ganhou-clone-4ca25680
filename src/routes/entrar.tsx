@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label";
 export const Route = createFileRoute("/entrar")({
   head: () => ({
     meta: [
-      { title: "Entrar na sua conta Hub" },
+      { title: "Entrar na sua conta Hub Data" },
       {
         name: "description",
         content:
