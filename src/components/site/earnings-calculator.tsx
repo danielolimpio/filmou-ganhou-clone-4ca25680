@@ -73,11 +73,12 @@ export function EarningsCalculator() {
           aprovadas.
         </p>
         <Button asChild size="lg" className="mt-6 rounded-full px-6 shadow-[var(--shadow-cta)]">
-          <Link to="/cadastro">
+          <a href="https://ai.hub.xyz/r/VNE8A8D7" target="_blank" rel="noopener noreferrer">
             Criar minha conta
             <ArrowRight className="h-4 w-4" />
-          </Link>
+          </a>
         </Button>
+
       </div>
     </section>
   );
