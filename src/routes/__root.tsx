@@ -91,7 +91,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Renda extra em casa gravando tarefas do dia a dia com o celular: até R$ 30 por hora aprovada, saque via PIX e cadastro grátis na Hub Data.",
       },
       { name: "author", content: "Hub Data" },
+      {
+        name: "robots",
+        content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      },
+      { name: "googlebot", content: "index, follow, max-image-preview:large" },
+      { name: "language", content: "pt-BR" },
       { property: "og:site_name", content: "Hub Data" },
+
+
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
       { name: "twitter:card", content: "summary_large_image" },
