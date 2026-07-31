@@ -97,6 +97,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "googlebot", content: "index, follow, max-image-preview:large" },
       { name: "language", content: "pt-BR" },
+      { property: "og:site_name", content: "Hub Data" },
+
 
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
