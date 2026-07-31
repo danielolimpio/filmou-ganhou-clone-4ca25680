@@ -15,6 +15,8 @@ import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { Toaster } from "@/components/ui/sonner";
 import { WhatsappButton } from "@/components/site/whatsapp-button";
+import { Analytics } from "@/components/site/analytics";
+import { GA_MEASUREMENT_ID } from "@/lib/analytics";
 
 
 function NotFoundComponent() {
