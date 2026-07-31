@@ -1,4 +1,4 @@
-name: Deploy Lovable via FTP na Hostinger
+name: Deploy do Hub Data na Hostinger
 
 on:
   push:
@@ -27,15 +27,22 @@ jobs:
       - name: Mostrar arquivos gerados
         run: ls -la dist/client/
 
-      - name: Deploy FTP para Hostinger
+      - name: Verificar conexão FTPS da Hostinger
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+        run: |
+          node -e "const dns=require('node:dns').promises; const net=require('node:net'); (async()=>{ if(!process.env.FTP_HOST) throw new Error('O secret FTP_HOST não foi configurado'); const host=process.env.FTP_HOST.replace(/^ftps?:\/\//,'').replace(/\/$/,''); await dns.lookup(host); await new Promise((resolve,reject)=>{ const socket=net.createConnection({host,port:21,timeout:20000},()=>{socket.destroy();resolve()}); socket.on('timeout',()=>{socket.destroy();reject(new Error('A porta FTPS 21 da Hostinger não respondeu'))}); socket.on('error',reject) }); console.log('Servidor FTPS acessível'); })().catch(error=>{ console.error(error.message); process.exit(1) })"
+
+      - name: Deploy FTPS para Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
           port: 21
+          protocol: ftps
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
           local-dir: ./dist/client/
           server-dir: /
-          dangerous-clean-slate: true
+          dangerous-clean-slate: false
           dry-run: false
-          log-level: verbose
+          log-level: standard
