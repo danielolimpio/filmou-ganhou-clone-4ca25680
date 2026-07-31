@@ -17,7 +17,9 @@ export const Route = createFileRoute("/entrar")({
       { property: "og:title", content: "Entrar — Hub Data" },
       { property: "og:description", content: "Acesse seu painel de ganhos e gravações." },
       { property: "og:url", content: "https://hubdata.org/entrar" },
-      { name: "robots", content: "noindex" },
+      { name: "robots", content: "noindex, follow" },
+      { name: "googlebot", content: "noindex, follow" },
+
     ],
     links: [{ rel: "canonical", href: "https://hubdata.org/entrar" }],
     scripts: [
