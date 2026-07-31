@@ -140,6 +140,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           ],
         }),
       },
+      {
+        async: true,
+        src: `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`,
+      },
     ],
   }),
   shellComponent: RootShell,
@@ -176,7 +180,7 @@ function RootComponent() {
         <Footer />
         <WhatsappButton />
         <Toaster />
-
+        <Analytics />
       </div>
     </QueryClientProvider>
   );
