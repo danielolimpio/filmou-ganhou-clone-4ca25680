@@ -84,12 +84,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Hub Data — ganhe dinheiro gravando vídeos em casa: R$ 30/h no PIX" },
-      {
-        name: "description",
-        content:
-          "Renda extra em casa gravando tarefas do dia a dia com o celular: até R$ 30 por hora aprovada, saque via PIX e cadastro grátis na Hub Data.",
-      },
       { name: "author", content: "Hub Data" },
       {
         name: "robots",
@@ -104,10 +98,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:locale", content: "pt_BR" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#22c55e" },
-      { property: "og:title", content: "Hub Data — ganhe dinheiro gravando vídeos em casa: R$ 30/h no PIX" },
-      { name: "twitter:title", content: "Hub Data — ganhe dinheiro gravando vídeos em casa: R$ 30/h no PIX" },
-      { property: "og:description", content: "Renda extra em casa gravando tarefas do dia a dia com o celular: até R$ 30 por hora aprovada, saque via PIX e cadastro grátis na Hub Data." },
-      { name: "twitter:description", content: "Renda extra em casa gravando tarefas do dia a dia com o celular: até R$ 30 por hora aprovada, saque via PIX e cadastro grátis na Hub Data." },
+      { property: "og:title", content: "Hub Data — ganhe gravando vídeos em casa" },
+      { name: "twitter:title", content: "Hub Data — ganhe gravando vídeos em casa" },
+      { property: "og:description", content: "Grave tarefas do dia a dia com o celular e ganhe até R$ 30 por hora aprovada, com saque via PIX." },
+      { name: "twitter:description", content: "Grave tarefas do dia a dia com o celular e ganhe até R$ 30 por hora aprovada, com saque via PIX." },
       { property: "og:image", content: "https://hubdata.org/media/og-hubdata.jpg" },
       { property: "og:image:secure_url", content: "https://hubdata.org/media/og-hubdata.jpg" },
       { property: "og:image:type", content: "image/jpeg" },

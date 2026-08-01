@@ -15,13 +15,13 @@ import { faqSchema } from "@/lib/site-data";
 export const Route = createFileRoute("/como-funciona")({
   head: () => ({
     meta: [
-      { title: "Como funciona: grave tarefas do dia a dia com o celular e ganhe R$ 30/h | Hub Data" },
+      { title: "Como funciona: grave e ganhe R$ 30/h | Hub Data" },
       {
         name: "description",
         content:
           "Passo a passo da Hub Data: Starter Kit grátis, app Minute, grave tarefas do dia a dia com o celular em casa e receba até R$ 30 por hora aprovada via PIX.",
       },
-      { property: "og:title", content: "Como funciona — ganhe dinheiro gravando vídeos em casa | Hub Data" },
+      { property: "og:title", content: "Como funciona — Hub Data" },
       {
         property: "og:description",
         content: "Starter Kit grátis, app Minute, boas gravações, antifraude e simulador de renda extra.",

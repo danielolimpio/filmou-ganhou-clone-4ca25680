@@ -7,11 +7,11 @@ import { TASK_CATEGORIES } from "@/lib/site-data";
 export const Route = createFileRoute("/tutoriais")({
   head: () => ({
     meta: [
-      { title: "Tutoriais: como ganhar dinheiro gravando vídeos no seu telefone | Hub Data" },
+      { title: "Tutoriais de gravação | Hub Data" },
       {
         name: "description",
         content:
-          "Tutoriais da Hub Data: use a faixa de cabeça, grave tarefas do dia a dia com o celular pelo app Minute e aumente sua taxa de aprovação para ganhar mais renda extra em casa.",
+          "Use a faixa de cabeça, grave pelo app Minute e aumente sua taxa de aprovação para ganhar mais renda extra em casa.",
       },
       { property: "og:title", content: "Tutoriais de gravação — Hub Data" },
       {
