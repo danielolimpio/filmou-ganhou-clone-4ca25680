@@ -125,11 +125,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", sizes: "any" },
-      { rel: "icon", href: "/favicon.png", type: "image/png", sizes: "512x512" },
-      { rel: "icon", href: "/favicon-192.png", type: "image/png", sizes: "192x192" },
-      { rel: "shortcut icon", href: "/favicon.ico" },
-      { rel: "apple-touch-icon", href: "/apple-touch-icon.png", sizes: "180x180" },
+      { rel: "icon", href: "/hubdata-favicon-v2.png", type: "image/png", sizes: "48x48" },
+      { rel: "icon", href: "/favicon.ico?v=2", type: "image/x-icon", sizes: "16x16 32x32 48x48" },
+      { rel: "icon", href: "/favicon-32.png?v=2", type: "image/png", sizes: "32x32" },
+      { rel: "icon", href: "/favicon-192.png?v=2", type: "image/png", sizes: "192x192" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png?v=2", sizes: "180x180" },
+      { rel: "manifest", href: "/site.webmanifest?v=2" },
     ],
     scripts: [
       {
@@ -140,6 +141,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           name: "Hub Data",
           alternateName: ["Hub", "Hub Video"],
           url: "https://hubdata.org/",
+          logo: "https://hubdata.org/favicon.png",
           description:
             "Plataforma que paga por vídeos: colaboradores gravam tarefas do dia a dia com o celular e recebem até R$ 30 por hora aprovada via PIX, treinando inteligência artificial.",
           address: [
