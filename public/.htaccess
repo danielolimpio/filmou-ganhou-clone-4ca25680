@@ -29,3 +29,10 @@ RewriteRule ^ /index.html [L]
   ExpiresByType image/jpeg "access plus 6 months"
   ExpiresByType text/html "access plus 0 seconds"
 </IfModule>
+
+# Favicons mudam raramente, mas não podem ficar presos no cache antigo da hospedagem.
+<IfModule mod_headers.c>
+  <FilesMatch "^(favicon.*\.(ico|png)|hubdata-favicon-v2\.png|apple-touch-icon\.png|site\.webmanifest)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
