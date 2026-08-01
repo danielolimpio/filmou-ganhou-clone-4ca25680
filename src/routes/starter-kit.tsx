@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/starter-kit")({
   head: () => ({
     meta: [
-      { title: "Starter Kit grátis: faixa de cabeça para gravar com o celular | Hub Data" },
+      { title: "Starter Kit grátis para gravar | Hub Data" },
       {
         name: "description",
         content:

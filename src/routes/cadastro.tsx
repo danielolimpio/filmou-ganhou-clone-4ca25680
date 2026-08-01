@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 export const Route = createFileRoute("/cadastro")({
   head: () => ({
     meta: [
-      { title: "Cadastro grátis: ganhe R$ 30/h gravando vídeos em casa | Hub Data" },
+      { title: "Cadastro grátis: ganhe R$ 30/h | Hub Data" },
       {
         name: "description",
         content:

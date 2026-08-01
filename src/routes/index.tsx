@@ -9,9 +9,9 @@ import { WatchVsRecord } from "@/components/site/watch-vs-record";
 import { FaqSection, CtaSection } from "@/components/site/sections";
 import { faqSchema } from "@/lib/site-data";
 
-const TITLE = "Hub Data — ganhe dinheiro gravando vídeos em casa: R$ 30/h no PIX";
+const TITLE = "Ganhe dinheiro gravando vídeos em casa | Hub Data";
 const DESCRIPTION =
-  "Renda extra em casa gravando tarefas do dia a dia com o celular: até R$ 30 por hora aprovada, recebimento via PIX e cadastro grátis. Ganhe dinheiro treinando inteligência artificial sem sair do home office.";
+  "Grave tarefas do dia a dia com o celular e ganhe até R$ 30 por hora aprovada, com saque via PIX. Cadastro grátis na Hub Data.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

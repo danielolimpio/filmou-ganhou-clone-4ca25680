@@ -5,11 +5,11 @@ import { CtaSection } from "@/components/site/sections";
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre a Hub Data — ganhe dinheiro treinando inteligência artificial" },
+      { title: "Sobre a Hub Data — quem somos" },
       {
         name: "description",
         content:
-          "A Hub Data é a plataforma que paga por vídeos usados no treinamento de inteligência artificial: colaboradores gravam tarefas do dia a dia em casa e recebem por hora aprovada.",
+          "Conheça a Hub Data: pagamos por vídeos reais usados no treinamento de inteligência artificial, com ganhos por hora aprovada.",
       },
       { property: "og:title", content: "Sobre a Hub Data" },
       {
