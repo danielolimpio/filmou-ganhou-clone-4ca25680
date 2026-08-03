@@ -32,7 +32,9 @@ RewriteRule ^ /index.html [L]
 
 # Favicons mudam raramente, mas não podem ficar presos no cache antigo da hospedagem.
 <IfModule mod_headers.c>
-  <FilesMatch "^(favicon.*\.(ico|png)|hubdata-favicon-v2\.png|apple-touch-icon\.png|site\.webmanifest)$">
-    Header set Cache-Control "public, max-age=0, must-revalidate"
+  <FilesMatch "^(favicon.*\.(ico|png)|hubdata-favicon-v[0-9]+\.png|apple-touch-icon\.png|site\.webmanifest)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
   </FilesMatch>
 </IfModule>
