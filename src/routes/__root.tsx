@@ -115,12 +115,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap",
       },
-      { rel: "icon", href: "/hubdata-favicon-v2.png", type: "image/png", sizes: "48x48" },
-      { rel: "icon", href: "/favicon.ico?v=3", type: "image/x-icon", sizes: "16x16 32x32 48x48" },
-      { rel: "icon", href: "/favicon-32.png?v=3", type: "image/png", sizes: "32x32" },
-      { rel: "icon", href: "/favicon-192.png?v=3", type: "image/png", sizes: "192x192" },
-      { rel: "apple-touch-icon", href: "/apple-touch-icon.png?v=3", sizes: "180x180" },
-      { rel: "manifest", href: "/site.webmanifest?v=3" },
+      {
+        rel: "icon",
+        href: "https://hubdata.org/hubdata-favicon-v4.png",
+        type: "image/png",
+        sizes: "48x48",
+      },
+      { rel: "shortcut icon", href: "https://hubdata.org/favicon.ico?v=4", type: "image/x-icon" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png?v=4", sizes: "180x180" },
+      { rel: "manifest", href: "/site.webmanifest?v=4" },
     ],
     scripts: [
       {
