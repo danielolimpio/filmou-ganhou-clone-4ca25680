@@ -21,8 +21,9 @@ export const Route = createFileRoute("/")({
       {
         name: "keywords",
         content:
-          "hub data, hub video, ganhar dinheiro gravando vídeos, plataforma que paga por vídeos, trabalho em casa, renda extra, home office, ganhe dinheiro na internet, ganhar dinheiro assistindo vídeos, ganhar dinheiro treinando inteligência artificial, grave em casa receba via PIX",
+          "hub data, hub video, ganhar dinheiro com vídeos, ganhar dinheiro gravando vídeos, ganhar dinheiro fazendo vídeos em casa, ganhar dinheiro assistindo vídeos, como ganhar dinheiro com vídeos, como ganhar dinheiro no tiktok assistindo vídeos, como ganhar dinheiro no kwai assistindo vídeos, como ganhar dinheiro no youtube assistindo vídeos, aplicativo que ganha dinheiro, aplicativo que paga para gravar vídeos, trabalhar em casa pelo celular, trabalho em casa com celular, renda extra em casa, ganhar dinheiro com o celular, dinheiro extra pelo celular, ganhar dinheiro sem sair de casa, ganhar dinheiro na internet, plataforma que paga por vídeos, ganhar dinheiro treinando inteligência artificial, grave em casa receba via PIX",
       },
+
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:url", content: "https://hubdata.org/" },
