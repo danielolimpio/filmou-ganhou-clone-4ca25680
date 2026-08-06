@@ -127,7 +127,36 @@ export const FAQ_ITEMS: FaqItem[] = [
       "A Hub nunca cobra taxa, nunca pede depósito e nunca envia pagamento por links fora dos canais oficiais. Desconfie de promessas de ganho fixo alto sem trabalho, de grupos que pedem PIX antecipado e de páginas que imitam o nome Hub Data fora do domínio hubdata.org.",
     cta: { label: "Ler sobre prevenção de fraude", to: "/como-funciona" },
   },
+  {
+    question: "Como ganhar dinheiro no TikTok assistindo vídeos? E no Kwai?",
+    answer:
+      "No TikTok Lite e no Kwai você acumula moedas assistindo vídeos e girando roletas: na prática, quem busca 'como ganhar dinheiro no TikTok assistindo vídeos' ou 'como ganhar dinheiro no Kwai assistindo vídeo' costuma levar dias para converter alguns reais, porque o pagamento é por visualização e o saque exige metas e convites. Gravando vídeos na Hub Data a lógica muda: uma hora gravada e aprovada vale até R$ 30, sem moedas, sem roleta e sem indicar amigos.",
+    cta: { label: "Trocar assistir por gravar", to: "/como-funciona" },
+  },
+  {
+    question: "Como ganhar dinheiro no YouTube assistindo vídeos, sem monetização?",
+    answer:
+      "Ganhar dinheiro no YouTube assistindo vídeos praticamente não existe: o YouTube paga o criador por visualização (monetização), não o espectador. Quem não quer criar canal, editar nem esperar 1.000 inscritos pode gravar tarefas comuns pelo celular e receber por hora aprovada — é o caminho mais direto para transformar tempo em dinheiro sem depender de audiência.",
+  },
+  {
+    question: "Existe aplicativo que ganha dinheiro de verdade pelo celular?",
+    answer:
+      "Sim, mas a maioria dos apps que ganham dinheiro paga em pontos, cashback ou centavos por anúncio. O app Minute, da Hub Data, é diferente: é um aplicativo que paga para gravar vídeos de tarefas do dia a dia, com valor por hora aprovada e saque em PIX. Funciona em iPhone e Android e o cadastro é gratuito.",
+    cta: { label: "Baixar o app e começar", to: "/como-funciona" },
+  },
+  {
+    question: "Como trabalhar em casa pelo celular e ter dinheiro extra todo mês?",
+    answer:
+      "Basta ter um celular compatível, a faixa de cabeça gratuita e vontade de gravar sua rotina. Você escolhe os dias e horários, grava tarefas simples e acumula horas aprovadas — é trabalho em casa pelo celular sem meta, sem escala e sem entrevista, ideal para conseguir dinheiro extra pelo celular em paralelo a outro trabalho ou aos estudos.",
+    cta: { label: "Começar agora", to: "/cadastro" },
+  },
+  {
+    question: "Como ganhar dinheiro gravando vídeos em casa sem aparecer e sem editar?",
+    answer:
+      "Você grava em primeira pessoa, envia o arquivo bruto pelo app e pronto. Não há edição, roteiro, trilha, miniatura nem publicação — diferente de ganhar dinheiro fazendo vídeos para redes sociais, aqui ninguém precisa assistir ao seu vídeo para você receber: basta ele ser aprovado na revisão de qualidade.",
+  },
 ];
+
 
 
 export function faqSchema(items: FaqItem[] = FAQ_ITEMS) {
