@@ -183,7 +183,38 @@ function Index() {
             amigos. Cadastro grátis, Starter Kit grátis e pagamento direto na sua conta.
           </p>
         </div>
+
+        <h3 className="mt-10 text-xl font-bold text-foreground sm:text-2xl">
+          Ganhar dinheiro com vídeos pelo celular: o que funciona em 2026
+        </h3>
+        <div className="mt-4 space-y-4 text-sm leading-relaxed text-muted-foreground">
+          <p>
+            Se você procura <strong>como ganhar dinheiro no TikTok assistindo vídeos</strong>,{" "}
+            <strong>como ganhar dinheiro no Kwai assistindo vídeo</strong> ou{" "}
+            <strong>como ganhar dinheiro no YouTube assistindo vídeos</strong>, a conclusão é
+            sempre a mesma: são moedas, roletas e metas de saque que rendem poucos reais por
+            semana. Já <strong>ganhar dinheiro fazendo vídeos em casa</strong> paga por hora
+            gravada — e não por audiência, porque ninguém precisa assistir ao seu vídeo para você
+            receber.
+          </p>
+          <p>
+            A Hub Data é um <strong>aplicativo que ganha dinheiro de verdade</strong>: o app Minute
+            é um <strong>aplicativo que paga para gravar vídeos</strong> de tarefas comuns, com
+            valor por hora aprovada e saque em PIX. É a forma mais simples de{" "}
+            <strong>trabalhar em casa pelo celular</strong>, conseguir{" "}
+            <strong>dinheiro extra pelo celular</strong> e montar uma{" "}
+            <strong>renda extra em casa</strong> sem investir nada, sem CNPJ e sem carga horária
+            mínima.
+          </p>
+          <p>
+            Funciona para quem quer <strong>ganhar dinheiro sem sair de casa</strong> nas horas
+            livres, para quem já está em home office e para quem só quer{" "}
+            <strong>ganhar dinheiro com o celular</strong> gravando o que já faz: cozinhar,
+            organizar armários, lavar o carro, cuidar dos pets ou fazer pequenos reparos.
+          </p>
+        </div>
       </section>
+
 
       <FaqSection title="Perguntas frequentes sobre ganhar dinheiro gravando vídeos" />
 
