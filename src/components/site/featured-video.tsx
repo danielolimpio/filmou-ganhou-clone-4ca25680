@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { Video } from "lucide-react";
 import defaultVideo from "@/assets/videos/record-tutorial.mp4.asset.json";
 import defaultPoster from "@/assets/videos/record-tutorial-poster.jpg.asset.json";
@@ -69,29 +70,45 @@ export function FeaturedVideo({
               <span className="mt-3 block h-1 w-24 rounded-full bg-primary" aria-hidden />
 
               <ol className="mt-6 space-y-3">
-                {STEPS.map((s) => (
-                  <li
-                    key={s.n}
-                    className="flex items-center gap-4 rounded-2xl border border-border bg-card p-4 shadow-[0_10px_28px_-20px_rgba(0,0,0,0.5)]"
-                  >
-                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary-soft text-xs font-bold text-primary">
-                      {s.n}
-                    </span>
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl">
-                      {s.img ? (
-                        <img src={s.img} alt={s.alt} loading="lazy" className="h-11 w-11 object-contain" />
+                {STEPS.map((s) => {
+                  const inner = (
+                    <>
+                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary-soft text-xs font-bold text-primary">
+                        {s.n}
+                      </span>
+                      <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl">
+                        {s.img ? (
+                          <img src={s.img} alt={s.alt} loading="lazy" className="h-11 w-11 object-contain" />
+                        ) : (
+                          <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-soft text-primary">
+                            {s.icon ? <s.icon className="h-6 w-6" /> : null}
+                          </span>
+                        )}
+                      </span>
+                      <span>
+                        <span className="block text-base font-semibold">{s.title}</span>
+                        <span className="mt-0.5 block text-sm text-muted-foreground">{s.desc}</span>
+                      </span>
+                    </>
+                  );
+                  const cls =
+                    "flex items-center gap-4 rounded-2xl border border-border bg-card p-4 shadow-[0_10px_28px_-20px_rgba(0,0,0,0.5)]";
+                  return (
+                    <li key={s.n}>
+                      {s.n === 2 ? (
+                        <Link
+                          to="/como-funciona"
+                          hash="app-minute"
+                          className={`${cls} transition-colors hover:border-primary/40 hover:bg-accent`}
+                        >
+                          {inner}
+                        </Link>
                       ) : (
-                        <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-soft text-primary">
-                          {s.icon ? <s.icon className="h-6 w-6" /> : null}
-                        </span>
+                        <div className={cls}>{inner}</div>
                       )}
-                    </span>
-                    <span>
-                      <span className="block text-base font-semibold">{s.title}</span>
-                      <span className="mt-0.5 block text-sm text-muted-foreground">{s.desc}</span>
-                    </span>
-                  </li>
-                ))}
+                    </li>
+                  );
+                })}
               </ol>
             </div>
           )}
