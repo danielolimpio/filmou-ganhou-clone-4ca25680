@@ -85,6 +85,11 @@ export function StoreBadges({ className = "" }: { className?: string }) {
         />
       </div>
       <p className="mt-3 text-xs text-muted-foreground">Escaneie para baixar</p>
+      <p className="mt-3 max-w-xl text-xs leading-relaxed text-muted-foreground">
+        <strong className="font-semibold text-foreground">Modelos compatíveis:</strong> linha iPhone 12
+        a 17 (exceto 16e / 17e), Pixel 6 a 9 e Galaxy S21 a S26 (exceto modelos FE). Você também pode
+        verificar seu aparelho direto no app Minute.
+      </p>
     </div>
   );
 }
