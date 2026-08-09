@@ -39,10 +39,10 @@ export function Header() {
 
         <div className="hidden items-center gap-2 lg:flex">
           <Button asChild variant="ghost" size="sm">
-            <a href="https://ai.hub.xyz/" target="_blank" rel="noopener noreferrer">Entrar</a>
+            <Link to="/entrar">Entrar</Link>
           </Button>
           <Button asChild size="sm" className="rounded-full px-4 shadow-[var(--shadow-cta)]">
-            <a href="https://ai.hub.xyz/r/VNE8A8D7" target="_blank" rel="noopener noreferrer">Cadastre-se</a>
+            <Link to="/cadastro">Cadastre-se</Link>
           </Button>
         </div>
 
@@ -72,10 +72,10 @@ export function Header() {
             ))}
             <div className="mt-3 grid grid-cols-2 gap-2">
               <Button asChild variant="outline" onClick={() => setOpen(false)}>
-                <a href="https://ai.hub.xyz/" target="_blank" rel="noopener noreferrer">Entrar</a>
+                <Link to="/entrar">Entrar</Link>
               </Button>
               <Button asChild onClick={() => setOpen(false)}>
-                <a href="https://ai.hub.xyz/r/VNE8A8D7" target="_blank" rel="noopener noreferrer">Cadastre-se</a>
+                <Link to="/cadastro">Cadastre-se</Link>
               </Button>
             </div>
           </nav>
