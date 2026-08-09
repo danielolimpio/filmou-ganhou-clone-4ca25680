@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { Video } from "lucide-react";
 import defaultVideo from "@/assets/videos/record-tutorial.mp4.asset.json";
 import defaultPoster from "@/assets/videos/record-tutorial-poster.jpg.asset.json";
