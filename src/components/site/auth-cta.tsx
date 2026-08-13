@@ -1,6 +1,6 @@
 import { ArrowRight, MessageCircle, ShieldCheck } from "lucide-react";
 
-export const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/ITgahKAk1LXKb3VVTgbK4J";
+export const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/ByJ6Jzgb3ruGSmBSG7DHf8";
 
 interface AuthCtaProps {
   /** Texto acima do botão principal */
