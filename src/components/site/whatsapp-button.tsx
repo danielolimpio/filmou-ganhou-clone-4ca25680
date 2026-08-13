@@ -8,7 +8,7 @@ export function WhatsappButton() {
         href={WHATSAPP_URL}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Falar com o suporte no WhatsApp: +55 12 98251-9116"
+        aria-label="Falar com o suporte no WhatsApp: +55 12 98140-8992"
         className="flex h-14 w-14 items-center justify-center rounded-full shadow-lg transition-transform hover:scale-105"
         style={{ backgroundColor: "#25D366" }}
       >
