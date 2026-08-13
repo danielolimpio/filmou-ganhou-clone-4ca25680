@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5512982519116";
+const WHATSAPP_NUMBER = "5512981408992";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 export function WhatsappButton() {
